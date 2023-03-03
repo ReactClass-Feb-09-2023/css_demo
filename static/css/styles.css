@@ -1,18 +1,30 @@
-/* colors */
-p {
-  color: #ff0000;
+/* measuring units */
+
+/* absolute units */
+:root {
+  font-size: 12px;
 }
 
-div {
-  background-color: #0000ff;
-  opacity: 0.5;
+#container {
+  width: 90vmin;
+  height: 200px;
+  background-color: salmon;
+  font-size: 3px;
 }
-/* Hexadecimal system 
-0-9-A-B-C-D-E-F
-base 16
+
+/* relative units */
+/*  %    em    rem*/
+
+/* viewport relative units 
+  vh, vw vmin vmax
+  
+  lvh lvw svh svw dvh dvw
 */
-/* 
-HWB stands for Hue-Whiteness-Blackness,
-
-HSL stands for Hue-Saturation-Lightness, 
- */
+.item {
+  width: 50%;
+  height: 50%;
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+  margin: 10px;
+}
