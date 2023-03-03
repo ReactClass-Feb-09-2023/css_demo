@@ -1,21 +1,47 @@
-/* * {
+section,
+article {
+  background-color: aqua;
+  border: 1px solid red;
+}
+section {
+  width: 100px;
+  height: 100px;
   background-color: salmon;
-} */
+  margin: 1rem;
+}
+/* descendant selector */
 
-/* tag selector */
-p {
-  color: blue;
-  font-size: 32px;
+#container section {
+  /* background-color: darkblue; */
 }
 
-/* id selector */
-#tagline {
-  color: red;
-  font-size: 42px;
+/* Direct child */
+
+#container > section {
+  /* background-color: red; */
 }
 
-/* class selector */
-.description {
-  color: green;
-  font-size: 8px;
+/* General Sibling */
+
+.article-section ~ section {
+  /* background-color: violet; */
+}
+
+/* adjacent sibling */
+
+.article-section + section {
+  /* background-color: green; */
+}
+
+/* OR selector */
+
+article,
+section {
+  /* background-color: red; */
+}
+
+/* AND selector */
+
+section.article-section {
+  background-color: aquamarine;
 }
