@@ -1,47 +1,18 @@
-section,
-article {
-  background-color: aqua;
-  border: 1px solid red;
-}
-section {
-  width: 100px;
-  height: 100px;
-  background-color: salmon;
-  margin: 1rem;
-}
-/* descendant selector */
-
-#container section {
-  /* background-color: darkblue; */
+/* colors */
+p {
+  color: #ff0000;
 }
 
-/* Direct child */
-
-#container > section {
-  /* background-color: red; */
+div {
+  background-color: #0000ff;
+  opacity: 0.5;
 }
+/* Hexadecimal system 
+0-9-A-B-C-D-E-F
+base 16
+*/
+/* 
+HWB stands for Hue-Whiteness-Blackness,
 
-/* General Sibling */
-
-.article-section ~ section {
-  /* background-color: violet; */
-}
-
-/* adjacent sibling */
-
-.article-section + section {
-  /* background-color: green; */
-}
-
-/* OR selector */
-
-article,
-section {
-  /* background-color: red; */
-}
-
-/* AND selector */
-
-section.article-section {
-  background-color: aquamarine;
-}
+HSL stands for Hue-Saturation-Lightness, 
+ */
