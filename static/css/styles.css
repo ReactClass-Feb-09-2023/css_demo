@@ -2,3 +2,20 @@
   background-color: salmon;
 } */
 
+/* tag selector */
+p {
+  color: blue;
+  font-size: 32px;
+}
+
+/* id selector */
+#tagline {
+  color: red;
+  font-size: 42px;
+}
+
+/* class selector */
+.description {
+  color: green;
+  font-size: 8px;
+}
