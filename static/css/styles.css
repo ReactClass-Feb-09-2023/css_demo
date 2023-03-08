@@ -1,47 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
-@font-face {
-  font-family: 'Roboto Bold';
-  src: local('Roboto Bold'), url(../fonts/Roboto/Roboto-Bold.ttf);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Roboto Regular';
-  src: url(../fonts/Roboto/Roboto-Regular.ttf);
-}
-
-:root {
-  --font-bold: 'Roboto Bold', Verdana, Tahoma;
-  --font-regular: 'Roboto Regular', Tahoma;
-}
-
-* {
-  font-family: var(--font-bold);
-}
-
 div {
+  margin: 0.25rem;
+}
+
+.container {
+  outline: 2px dotted blue;
+  padding: 1rem;
+  height: 300px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  /* align-content: center; */
+  flex-wrap: wrap;
+}
+
+.item {
   border: 1px solid red;
-  margin: 1rem;
+  width: 100px;
 }
 
-p {
-  font-size: 1rem;
-  font-weight: 100;
-  font-family: 'Roboto Mono', monospace;
-  line-height: 1rem;
-  text-align: justify;
-  text-decoration: underline;
-  text-decoration-color: red;
-  text-decoration-style: wavy;
-}
-
-.delete-btn {
-  color: white;
-  background-color: rgb(252, 40, 40);
-  border: none;
-  padding: 10px;
-
-  margin: 1rem;
-  border-radius: 5px;
+.item:nth-child(3) {
+  align-self: flex-end;
+  background-color: aqua;
 }
