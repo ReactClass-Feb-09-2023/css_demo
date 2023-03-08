@@ -1,20 +1,47 @@
-*::after,
-*::before,
-* {
-  box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-}
-button {
-  border: none;
-  background: none !important;
-  border: 1px solid black;
-  border-radius: 3px;
-  padding: 0.15rem 1rem;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: local('Roboto Bold'), url(../fonts/Roboto/Roboto-Bold.ttf);
+  font-weight: 700;
 }
 
-button {
-  background-color: lightblue;
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+:root {
+  --font-bold: 'Roboto Bold', Verdana, Tahoma;
+  --font-regular: 'Roboto Regular', Tahoma;
+}
+
+* {
+  font-family: var(--font-bold);
+}
+
+div {
+  border: 1px solid red;
+  margin: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1rem;
+  text-align: justify;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
+.delete-btn {
+  color: white;
+  background-color: rgb(252, 40, 40);
+  border: none;
+  padding: 10px;
+
+  margin: 1rem;
+  border-radius: 5px;
 }
