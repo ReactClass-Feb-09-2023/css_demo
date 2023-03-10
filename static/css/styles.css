@@ -1,58 +1,13 @@
-div:not(.item) {
-  margin: 0.25rem;
+body {
+  margin: 3rem;
 }
 
-.container {
-  outline: 2px dotted blue;
-  padding: 1rem;
-  height: 300px;
+body *:not(button) {
+  outline: 1px solid red;
+}
 
+button {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  /* align-content: flex-end; */
-  /* flex-wrap: wrap; */
-  /* row-gap: 2rem;
-  column-gap: 0.5rem; */
-  /* gap: 4rem 1rem; */
+  align-items: center;
+  column-gap: 4px;
 }
-
-.item {
-  border: 1px solid red;
-  width: 120px;
-  height: 50px;
-  flex-grow: 1;
-}
-
-.first {
-  flex-grow: 4;
-  align-self: flex-end;
-}
-/*
-.second {
-  flex-grow: 1;
-}
-
-.third {
-  flex-grow: 1;
-} */
-
-/* .long {
-  height: 100px;
-} */
-
-/* .third {
-  background-color: aqua;
-  order: 2;
-}
-
-.second {
-  background-color: lightcoral;
-  order: 1;
-}
-
-.first {
-  background-color: burlywood;
-  order: 3;
-} */
