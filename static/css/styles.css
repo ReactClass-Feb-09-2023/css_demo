@@ -1,18 +1,6 @@
-.container {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  animation: 2s slide 1s infinite;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(100px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.btn-primary {
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+  padding: 1rem;
 }
