@@ -1,73 +1,12 @@
-/* Responsive Design */
-/* mobile | tablet | large tablets | desktop */
-/* 0px to 400px | 400px to 800px | 800px to 1024px | 1024px or above */
-
-/* Mobile First */
-:root,
-body,
-* {
-  --tablet-breakpoint: 400px;
-  --light-background-color: #fff;
-  --dark-background-color: #000000;
-  --light-color: #000;
-  --dark-color: #fff;
-}
-
-.animation {
-  animation: pulse 1s linear infinite both;
-}
-
 .container {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  /* background-color: burlywood; */
-  outline: 1px solid red;
-  margin: 1rem 0 0 1rem;
-}
-
-.item {
   width: 100px;
-  height: 50px;
+  height: 100px;
+  background-color: blue;
+  transition: all 1s ease-in-out;
 }
 
-@media screen and (width > var(--tablet-breakpoint)) {
-  /* Tablet CSS Rules */
-  .container {
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-}
-
-@media screen and (width > 800px) {
-  /* Desktop CSS Rules */
-}
-
-@media screen and (orientation: portrait) {
-  .item {
-    background-color: red;
-  }
-}
-
-@media screen and (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--dark-background-color);
-    color: var(--dark-color);
-  }
-}
-
-@media screen and (prefers-color-scheme: light) {
-  body {
-    background-color: var(--light-background-color);
-    color: var(--light-color);
-  }
-}
-
-@media screen and (prefers-reduced-motion) {
-  .animation {
-    animation: dissolve 2s linear both;
-  }
+.container:hover {
+  /* width: 200px; */
+  height: 200px;
+  background-color: green;
 }
