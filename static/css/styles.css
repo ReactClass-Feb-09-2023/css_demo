@@ -2,11 +2,17 @@
   width: 100px;
   height: 100px;
   background-color: blue;
-  transition: all 1s ease-in-out;
+  animation: 2s slide 1s infinite;
 }
 
-.container:hover {
-  /* width: 200px; */
-  height: 200px;
-  background-color: green;
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
